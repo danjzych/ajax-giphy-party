@@ -26,7 +26,12 @@ async function getMeme(evt) {
   const responseJSON = await response.json(); //why can't we add '.data[0].url' to the end of this?
   const gifURL = responseJSON.data[0].url;
 
-  $('.gifContainer').append($(`<img src='${gifURL}' />`));
+  console.log(responseJSON);
+
+  console.log(gifURL);
+
+  // $('.gifContainer').append($(`<img src='${gifURL}' />`));
+  $('.gifContainer').append($(`<img src='https://giphy.com/embed/iNZKRliHP4tI4mALtO' />`));
 
 
 }
