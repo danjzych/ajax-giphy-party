@@ -4,12 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Giphy Party!</title>
+  <style>
+
+    form {
+      position: fixed;
+    }
+
+    img {
+      margin: 20px;
+      max-width: 300px;
+      height: auto;
+    }
+
+  </style>
 </head>
 
 <body>
   <form>
     <input type="text" placeholder="pick your meme type here" id="gifSearchTerm">
     <button type="submit">Submit</button>
+    <button type="button" id="deleteAll">Delete All gifs</button>
   </form>
   <div class="gifContainer">
 
